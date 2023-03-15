@@ -16,7 +16,6 @@ export default function Home() {
             <main className={styles.main}>
                 <Header />
                 <div>
-                    {loading && <div className={styles.title}>Loading...</div>}
                     {session ? (
                         <>
                             <div className={styles.container}>

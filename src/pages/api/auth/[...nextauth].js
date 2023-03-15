@@ -13,6 +13,9 @@ const options = {
             clientSecret: process.env.FACEBOOK_SECRET,
         }),
     ],
+    pages: {
+        signIn: "/signIn",
+    },
 }
 
 export default (req, res) => NextAuth(req, res, options);
